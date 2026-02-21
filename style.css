@@ -24,6 +24,8 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 	font-weight: 500;
+  	margin: 0;
+  	padding: 0;
 }
 input,textarea,select{
 	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
@@ -187,60 +189,52 @@ br.clear {
 
 }
 #main{
-
-}
-#main section.name{
-	
-}
-#main section.name div.fat div.img{
-	height: 100vh;
-	overflow: hidden;
-}
-#main section.name div.fat div.img img{
-	object-fit: cover;
-	width: 100%;
-  	height: 100%;
-  	display: block;
 }
 #main section.name div.fat {
-	position: relative; 
+	background-image: url(assets/bg-1.jpg);
+	width:100%;
+	height: 95vh;
+	display: flex;
+	align-items: center;
+	padding-left: 150px;
+	background-position:30% top;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
-#main section.name  div.fat div.one{
-	position: absolute;
-	z-index: 2;
-	margin-top: -300px;
+#main section.name  div.fat div.hero-content{
+	
 }
-#main section.name  div.fat div.one h3.on{
-	margin-top: -320px;
+#main section.name  div.fat div.hero-content h3.on{
+	margin-top:;
 	font-size: 30px;
 	font-weight: 500;
 	color: white;
 }
-#main section.name  div.fat div.one h1{
+#main section.name  div.fat div.hero-content h1{
 	margin-top: 50px;
 	font-size: 70px;
 	font-weight: 900;
 	color: white;
 }
-#main section.name  div.fat div.one h3.tw{
+#main section.name  div.fat div.hero-content h3.tw{
 	margin-top: 20px;
 	font-size: 30px;
 	font-weight: 500;
 	color: white;
 }
-#main section.name  div.fat div.one img.ar1{
+#main section.name  div.fat div.hero-content img.ar1{
 	margin-left: -100px;
 	margin-top: -100px;
 	margin-right: 1300px;
 }
-#main section.name  div.fat div.one button{
+#main section.name  div.fat div.hero-content button{
 	margin-top: 50px;
 	width:190px;
 	height: 50px;
 	background-color: white;
 	border-radius: 5px;
 }
-#main section.name  div.fat div.one button a{
+#main section.name  div.fat div.hero-content button a{
 	font-size: 20px;
 	font-weight: 500px;
 }
@@ -1325,108 +1319,987 @@ br.clear {
 	color: white;
 	margin-top: -50px;
 }
-@media (max-width: 1280px) {
+
+@media (max-width: 376px) { 
+	#header section.wrapper div.right{
+		display: none;
+	}
+}
+@media (max-width: 376px) {
+  #main section.name,
+  #main section.name .fat,
+  #main section.name .img {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
+
+  #main section.name .img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
+}
+@media (max-width: 376px) {
+	h1 {
+  		font-size: 32px;
+  		line-height: 1.2;
+	}
+	h2 {
+  font-size: 22px;
+	}
+
+	h3 {
+	  font-size: 16px;
+	}
+}
+@media (max-width: 481px){
 	.wrapper{
-		margin-left: ;
+  		max-width: 100%;
+	}
+	#main{
+
+	}
+	#main section.name div.fat {
+		background-image: url(assets/bg-1.jpg);
+		width:300%;
+		height:1000px;
+		display: flex;
+		align-items: center;
+		padding-left: 150px;
+		background-position:30% top;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	#main section.name  div.fat div.hero-content{
+		
+	}
+	#main section.name  div.fat div.hero-content h3.on{
+		margin-top:10px;
+		font-size: 30px;
+		font-weight: 500;
+		color: white;
+	}
+	#main section.name  div.fat div.hero-content h1{
+		margin-top: 10px;
+		font-size: 70px;
+		font-weight: 900;
+		color: white;
+	}
+	#main section.name  div.fat div.hero-content h3.tw{
+		margin-top: 20px;
+		font-size: 30px;
+		font-weight: 500;
+		color: white;
+	}
+	#main section.name  div.fat div.hero-content img.ar1{
+		margin-left: -100px;
+		margin-top: -100px;
+		margin-right: 1300px;
+	}
+	#main section.name  div.fat div.hero-content button{
+		margin-top: 50px;
+		width:190px;
+		height: 50px;
+		background-color: white;
+		border-radius: 5px;
+	}
+	#main section.name  div.fat div.hero-content button a{
+		font-size: 20px;
+		font-weight: 500px;
+	}
+	#cards1{
+		height: 120vh;
+	}
+	#cards1 section.main {
+    	width: 100%;
+    	max-width: 1200px;
+  		margin: auto;
+  		display: block;
+  		height: auto;
+	}
+	#cards1 section.main div.one{
+	background-image: url(assets/bg-2.jpg);
+	margin-left:100px;
+	margin-top: 100px;
+	height: 430px;
+	width: 600px;
+	background-size:1000px;
+	border-radius: 10px;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.12);
+	margin-left: 300px;
+	}
+	#cards1 section.main div.one section.wrapper {
+		width: 900;
+    	max-width: 1200px;
+  		margin: auto;
+	}
+	#cards1 section.main div.one section.wrapper h2.a{
+		margin-top: 50px;
+		font-weight: 600;
+		color: white;
+
+	}
+	#cards1 section.main div.one section.wrapper h1.b{
+		margin-top: 30px;
+		font-weight: 900;
+		color: white;
+
+	}
+	#cards1 section.main div.one section.wrapper h2.c{
+		margin-top: 20px;
+		font-weight: 500;
+		color: white;
+
+	}
+	#cards1 section.main div.one section.wrapper h2.d {
+		margin-top: 50px;
+		color: white;
+
+	}
+	#cards1 section.main div.one section.wrapper h2.d u{
+		font-weight: 500;
+	}
+	#cards1 section.main div.two{
+		background-image: url(assets/bg-3.jpg);
+		margin-top: 100px;
+		height: 357px;
+		width: 600px;
+		background-size:900px;
+		border-radius: 10px;
+		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.12);
+		transform: rotateY(180deg);
+		background-position:  -300px top;
+		margin-left: 300px;
+	}
+	#cards1 section.main div.two h2{
+		transform: rotateY(180deg);
+	}
+	#cards1 section.main div.two  h2.a{
+		margin-top: 50px;
+		font-weight: 600;
+		margin-left: 160px;
+		color: white;
+	}
+	#cards1 section.main div.two  h1.b{
+		margin-top: 30px;
+		font-weight: 900;
+		margin-left: 160px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+	#cards1 section.main div.two  h2.c{
+		margin-top: 20px;
+		font-weight: 500;
+		margin-left: 160px;
+		color: white;
+	}
+	#cards1 section.main div.two  h2.d {
+		margin-top: 50px;
+		margin-left: 160px;
+		color: white;
+	}
+	#cards1 section.main div.two  h2.d u{
+		font-weight: 500;
+	}
+	#men{
+		width: 250%;
+	}
+	#men section.wrapper{
+		margin-left: 150px;
+	}
+	#men section.wrapper div.one{
+		display: flex;
+		margin-bottom: 100px;
+	}
+	#men section.wrapper div.one div.rect{
+		width: 6px;
+		height:30px;
+		border-radius:10px;
+		background-color:#8A33FD;
+		margin-right: 20px;
+	}
+	#men section.wrapper div.one div.text{
+		
+	}
+	#men section.wrapper div.one div.text h1{
+		font-weight: 700;
+	}
+	#men section.wrapper div.main{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#men section.wrapper div.main div.box1{
+		margin-right: 30px;
+		margin-top: 30px;
+
+	}
+	#men section.wrapper div.main div.box1 img.img{
+		
+	}
+	#men section.wrapper div.main div.box1 h4{
+		
+	}
+	#men section.wrapper div.main div.box1 a{
+		
+	}
+	#men section.wrapper div.main div.box1 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box2{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#men section.wrapper div.main div.box2 img.img{
+		
+	}
+	#men section.wrapper div.main div.box2 h4{
+		
+	}
+	#men section.wrapper div.main div.box2 a{
+		
+	}
+	#men section.wrapper div.main div.box2 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box3{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#men section.wrapper div.main div.box3 img.img{
+		
+	}
+	#men section.wrapper div.main div.box3 h4{
+		
+	}
+	#men section.wrapper div.main div.box3 a{
+		
+	}
+	#men section.wrapper div.main div.box3 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box4{
+		margin-top: 30px;
+		margin-right:40px;
+	}
+	#men section.wrapper div.main div.box4 img.img{
+		
+	}
+	#men section.wrapper div.main div.box4 h4{
+		
+	}
+	#men section.wrapper div.main div.box4 a{
+		
+	}
+	#men section.wrapper div.main div.box4 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box5{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#men section.wrapper div.main div.box5 img.img{
+		
+	}
+	#men section.wrapper div.main div.box5 h4{
+		
+	}
+	#men section.wrapper div.main div.box5 a{
+		
+	}
+	#men section.wrapper div.main div.box5 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box6{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#men section.wrapper div.main div.box6 img.img{
+		
+	}
+	#men section.wrapper div.main div.box6 h4{
+		
+	}
+	#men section.wrapper div.main div.box6 a{
+		
+	}
+	#men section.wrapper div.main div.box6 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box7{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#men section.wrapper div.main div.box7 img.img{
+		height: 393px;
+		width:273px;
+	}
+	#men section.wrapper div.main div.box7 h4{
+		
+	}
+	#men section.wrapper div.main div.box7 a{
+		
+	}
+	#men section.wrapper div.main div.box7 a img.ar1{
+		margin-left: 240px;
+	}
+	#men section.wrapper div.main div.box8{
+		margin-top: 30px;
+	}
+	#men section.wrapper div.main div.box8 img.img{
+		
+	}
+	#men section.wrapper div.main div.box8 h4{
+		
+	}
+	#men section.wrapper div.main div.box8 a{
+		
+	}
+	#men section.wrapper div.main div.box8 a img.ar1{
+		margin-left: 240px;
+	}
+	#Women{
+		margin-top: 100px;
+		width: 250%;
+	}
+	#Women section.wrapper{
+		margin-left: 200px;
+	}
+	#Women section.wrapper div.one{
+		display: flex;
+		margin-bottom: 100px;
+	}
+	#Women section.wrapper div.one div.rect{
+		width: 6px;
+		height:30px;
+		border-radius:10px;
+		background-color:#8A33FD;
+		margin-right: 20px;
+	}
+	#Women section.wrapper div.one div.text{
+		
+	}
+	#Women section.wrapper div.one div.text h1{
+		font-weight: 700;
+	}
+	#Women section.wrapper div.main{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#Women section.wrapper div.main div.box1{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#Women section.wrapper div.main div.box1 img.img{
+		
+	}
+	#Women section.wrapper div.main div.box1 h4{
+		
+	}
+	#Women section.wrapper div.main div.box1 a{
+		
+	}
+	#Women section.wrapper div.main div.box1 a img.ar1{
+		margin-left: 240px;
+	}
+	#Women section.wrapper div.main div.box2{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#Women section.wrapper div.main div.box2 img.img{
+		
+	}
+	#Women section.wrapper div.main div.box2 h4{
+		
+	}
+	#Women section.wrapper div.main div.box2 a{
+		
+	}
+	#Women section.wrapper div.main div.box2 a img.ar1{
+		margin-left: 240px;
+	}
+	#Women section.wrapper div.main div.box3{
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	#Women section.wrapper div.main div.box3 img.img{
+		
+	}
+	#Women section.wrapper div.main div.box3 h4{
+		
+	}
+	#Women section.wrapper div.main div.box3 a{
+		
+	}
+	#Women section.wrapper div.main div.box3 a img.ar1{
+		margin-left: 240px;
+	}
+	#Women section.wrapper div.main div.box4{
+		margin-top: 30px;
+		margin-left: 300px;
+	}
+	#Women section.wrapper div.main div.box4 img.img{
+		
+	}
+	#Women section.wrapper div.main div.box4 h4{
+		
+	}
+	#Women section.wrapper div.main div.box4 a{
+		
+	}
+	#card{
+		margin-bottom: 100px;
+		width: 250%;
+	}
+	#card section.wrapper{
+		
+	}
+	#card section.wrapper div.one{
+		display: flex;
+		margin-bottom: 100px;
+	}
+	#card section.wrapper div.one div.rect{
+		width: 6px;
+		height:30px;
+		border-radius:10px;
+		background-color:#8A33FD;
+		margin-right: 20px;
+	}
+	#card section.wrapper div.one div.text{
+		
+	}
+	#card section.wrapper div.one div.text h1{
+		font-weight: 700;
+	}
+	#card section.wrapper div.main{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	#card section.wrapper div.main div{
+		
+	}
+	#card section.wrapper div.main div.card1{
+		position: relative;
+		margin-right: 20px;
+	}
+	#card section.wrapper div.main div.card1 img.on{
+		position: relative;
+	}
+	#card section.wrapper div.main div.card1 div.logo{
+		width: 33px;
+		height: 33px;
+		border-radius: 50%;
+		background-color: white;
+		margin-left: 230px;
+		margin-top:-340px;
+		position: absolute;
+		z-index: 2;
+		display: flex;
+	    justify-content: center;
+	    align-items: center; 
+	}
+	#card section.wrapper div.main div.card1 div.logo img{
+		position: absolute;
+		z-index: 3;
+	}
+	#card section.wrapper div.main div.card1 div.lar{
+		display: flex;
+	}
+	#card section.wrapper div.main div.card1 div.lar div.text{
+		
+	}
+	#card section.wrapper div.main div.card1 div.lar div.text h4.one{
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 30px;
+		color: #3C4242;
+	}
+	#card section.wrapper div.main div.card1 div.lar div.text h5.two{
+		color: #807D7E;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	#card section.wrapper div.main div.card1 div.lar div.btn button{
+		width: 82px;
+		height: 36px;
+		background-color: #F6F6F6;
+		border-radius: 5px;
+		align-items: center;
+		margin-top: 22px;
+		margin-left: 10px;
+	}
+	#card section.wrapper div.main div.card1 div.lar div.btn button a{
+		font-weight: 700;
+		color: #3C4242;
+	}
+
+	#card section.wrapper div.main div.card2{
+		position: relative;
+		margin-right: 23px;
+	}
+	#card section.wrapper div.main div.card2 img.on{
+		position: relative;
+	}
+	#card section.wrapper div.main div.card2 div.logo{
+		width: 33px;
+		height: 33px;
+		border-radius: 50%;
+		background-color: white;
+		margin-left: 230px;
+		margin-top:-340px;
+		position: absolute;
+		z-index: 2;
+		display: flex;
+	    justify-content: center;
+	    align-items: center; 
+	}
+	#card section.wrapper div.main div.card2 div.logo img{
+		position: absolute;
+		z-index: 3;
+	}
+	#card section.wrapper div.main div.card2 div.lar{
+		display: flex;
+	}
+	#card section.wrapper div.main div.card2 div.lar div.text{
+		
+	}
+	#card section.wrapper div.main div.card2 div.lar div.text h4.one{
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 30px;
+		color: #3C4242;
+	}
+	#card section.wrapper div.main div.card2 div.lar div.text h5.two{
+		color: #807D7E;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	#card section.wrapper div.main div.card2 div.lar div.btn button{
+		width: 82px;
+		height: 36px;
+		background-color: #F6F6F6;
+		border-radius: 5px;
+		align-items: center;
+		margin-top: 22px;
+		margin-left: 10px;
+	}
+	#card section.wrapper div.main div.card2 div.lar div.btn button a{
+		font-weight: 700;
+		color: #3C4242;
+	}
+	#card section.wrapper div.main div.card3{
+		position: relative;
+		margin-right: 25px;
+	}
+	#card section.wrapper div.main div.card3 img.on{
+		position: relative;
+	}
+	#card section.wrapper div.main div.card3 div.logo{
+		width: 33px;
+		height: 33px;
+		border-radius: 50%;
+		background-color: white;
+		margin-left: 230px;
+		margin-top:-340px;
+		position: absolute;
+		z-index: 2;
+		display: flex;
+	    justify-content: center;
+	    align-items: center; 
+	}
+	#card section.wrapper div.main div.card3 div.logo img{
+		position: absolute;
+		z-index: 3;
+	}
+	#card section.wrapper div.main div.card3 div.lar{
+		display: flex;
+	}
+	#card section.wrapper div.main div.card3 div.lar div.text{
+		
+	}
+	#card section.wrapper div.main div.card3 div.lar div.text h4.one{
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 30px;
+		color: #3C4242;
+	}
+	#card section.wrapper div.main div.card3 div.lar div.text h5.two{
+		color: #807D7E;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	#card section.wrapper div.main div.card3 div.lar div.btn button{
+		width: 82px;
+		height: 36px;
+		background-color: #F6F6F6;
+		border-radius: 5px;
+		align-items: center;
+		margin-top: 22px;
+		margin-left: 100px;
+	}
+	#card section.wrapper div.main div.card3 div.lar div.btn button a{
+		font-weight: 700;
+		color: #3C4242;
+	}
+	#card section.wrapper div.main div.card4{
+		position: relative;
+		margin-top: 60px;
+	}
+	#card section.wrapper div.main div.card4 img.on{
+		position: relative;
+	}
+	#card section.wrapper div.main div.card4 div.logo{
+		width: 33px;
+		height: 33px;
+		border-radius: 50%;
+		background-color: white;
+		margin-left: 230px;
+		margin-top:-340px;
+		position: absolute;
+		z-index: 2;
+		display: flex;
+	    justify-content: center;
+	    align-items: center; 
+	}
+	#card section.wrapper div.main div.card4 div.logo img{
+		position: absolute;
+		z-index: 3;
+	}
+	#card section.wrapper div.main div.card4 div.lar{
+		display: flex;
+	}
+	#card section.wrapper div.main div.card4 div.lar div.text{
+		
+	}
+	#card section.wrapper div.main div.card4 div.lar div.text h4.one{
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 30px;
+		color: #3C4242;
+	}
+	#card section.wrapper div.main div.card4 div.lar div.text h5.two{
+		color: #807D7E;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	#card section.wrapper div.main div.card4 div.lar div.btn button{
+		width: 82px;
+		height: 36px;
+		background-color: #F6F6F6;
+		border-radius: 5px;
+		align-items: center;
+		margin-top: 22px;
+		margin-left: 10px;
+	}
+	#card section.wrapper div.main div.card4 div.lar div.btn button a{
+		font-weight: 700;
+		color: #3C4242;
+	}
+	#feed{
+		margin-top: 30px;
+		margin-bottom: 100px;
+		width: 250%;
+	}
+	#feed section.wrapper{
+		
+	}
+	#feed section.wrapper div.one{
+		display: flex;
+		margin-bottom: 100px;
+	}
+	#feed section.wrapper div.one div.rect{
+		width: 6px;
+		height:30px;
+		border-radius:10px;
+		background-color:#8A33FD;
+		margin-right: 20px;
+	}
+	#feed section.wrapper div.one div.text{
+		
+	}
+	#feed section.wrapper div.one div.text h1{
+		font-weight: 700;
+	}
+	#feed section.wrapper div.main{
+		display: flex;
+	}
+	#feed section.wrapper div.main div.box1{
+		width: 397px;
+		height: 500px;
+		border: 2px solid;
+		border-color: #807D7E;
+		border-radius: 10px;
+		margin-right: 20px;
+	}
+	#feed section.wrapper div.main div.box1 div.content{
+		margin-left: 30px;
+		margin-top: -10px;
+	}
+	#feed section.wrapper div.main div.box1 div.content img.pic{
+		margin-top: 35px;
+	}
+	#feed section.wrapper div.main div.box1 div.content h2{ 
+		margin-top: 30px;
+		color: #3C4242;
+		font-weight: bolder;
+	}
+	#feed section.wrapper div.main div.box1 div.content p{
+		font-size: 14px;
+		margin-top: 30px;
+		color: #807D7E;
+	}
+	#feed section.wrapper div.main div.box1 div.star{
+		margin-top: -400px;
+		margin-left: 230px;
+	}
+	#feed section.wrapper div.main div.box1 div.star img{
+		
+	}
+	#feed section.wrapper div.main div.box2{
+		width: 397px;
+		height: 500px;;
+		border: 2px solid;
+		border-color: #807D7E;
+		border-radius: 10px;
+		margin-right: 20px;
+	}
+	#feed section.wrapper div.main div.box2 div.content{
+		margin-left: 30px;
+		margin-top: -10px;
+	}
+	#feed section.wrapper div.main div.box2 div.content img.pic{
+		margin-top: 35px;
+	}
+	#feed section.wrapper div.main div.box2 div.content h2{ 
+		margin-top: 30px;
+		color: #3C4242;
+		font-weight: bolder;
+	}
+	#feed section.wrapper div.main div.box2 div.content p{
+		font-size: 14px;
+		margin-top: 30px;
+		color: #807D7E;
+	}
+	#feed section.wrapper div.main div.box2 div.star{
+		margin-top: -200px;
+		margin-left: 230px;
+	}
+	#feed section.wrapper div.main div.box2 div.star img{
+		
+	}
+	#feed section.wrapper div.main div.box3	{
+		width: 397px;
+		height: 500px;
+		border: 2px solid;
+		border-color: #807D7E;
+		border-radius: 10px;
+		margin-right: 15px;
+	}
+	#feed section.wrapper div.main div.box3	 div.content{
+		margin-left: 30px;
+		margin-top: -10px;
+	}
+	#feed section.wrapper div.main div.box3	 div.content img.pic{
+		margin-top: 35px;
+	}
+	#feed section.wrapper div.main div.box3	 div.content h2{ 
+		margin-top: 30px;
+		color: #3C4242;
+		font-weight: bolder;
+	}
+	#feed section.wrapper div.main div.box3	 div.content p{
+		font-size: 14px;
+		margin-top: 30px;
+		color: #807D7E;
+	}
+	#feed section.wrapper div.main div.box3	 div.star{
+		margin-top: -400px;
+		margin-left: 230px;
+	}
+	#feed section.wrapper div.main div.box3	 div.star img{
+		
 	}
 	#footer{
-		width: 100%;
-		height: ato;
-
+		background-color: #3C4242;
+		width: 270%;
 	}
 	#footer section.wrapper{
-		width:0 auto;
+		
+	}
+	#footer section.wrapper div.main1{
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 100px;
+	}
+	#footer section.wrapper div.main1 h4{
+		margin-bottom: 30px;
+	}
+	#footer section.wrapper div.main1 h4 a{
+		color: white;
+	} 
+	#footer section.wrapper div.main1 h5 a{
+		color: white;
+	}
+	#footer section.wrapper div.main1 h5 {
+		margin-bottom: 30px;
+	}
+	#footer section.wrapper div.main1 div.one{
+		
+	}
+	#footer section.wrapper div.main1 div.one h4.u{
+		margin-bottom: 40px;
+	}
+	#footer section.wrapper div.main1 div.one h4.u a{
+		font-weight: 900;
+		font-size: 20px;
+
+	}
+	#footer section.wrapper div.main1 div.one h5.c a{
+
+	}
+	#footer section.wrapper div.main1 div.two{
+		margin-bottom: 40px;
+	}
+	#footer section.wrapper div.main1 div.two h4.u a{
+		font-weight: 900;
+		font-size: 20px;
+	}
+	#footer section.wrapper div.main1 div.two h5.c a{
+
+	}
+	#footer section.wrapper div.main1 div.three{
+		margin-bottom: 40px;
+	}
+	#footer section.wrapper div.main1 div.three h4.u a{
+		font-weight: 900;
+		font-size: 20px;
+	}
+	#footer section.wrapper div.main1 div.three h5.c a{
+		
+	}
+	#footer section.wrapper div.main1 div.four{
+		margin-bottom: 40px;
+	}
+	#footer section.wrapper div.main1 div.four h4.u a{
+		font-weight: 900;
+		font-size: 20px;
+	}
+	#footer section.wrapper div.main1 div.four h5.c a{
+
+	}
+	#footer section.wrapper div.main2{
+		display: flex;
+	}
+	#footer section.wrapper div.main2 div.left{
+		display: flex;
+		margin-top: 80px;
+	}
+	#footer section.wrapper div.main2 div.left div.one{
+		width: 37px;
+		height: 37px;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		background-color: white;
+		margin-right: 10px;
+	}
+	#footer section.wrapper div.main2 div.left div.one img{
+
+	}
+	#footer section.wrapper div.main2 div.left div.two{
+		width: 37px;
+		height: 37px;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		background-color: white;
+		margin-right: 10px;
+	}
+	#footer section.wrapper div.main2 div.left div.two img{
+
+	}
+	#footer section.wrapper div.main2 div.left div.three{
+		width: 37px;
+		height: 37px;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		background-color: white;
+		margin-right: 10px;
+	}
+	#footer section.wrapper div.main2 div.left div.three img{
+		height: 18px;
+		width: 15px;
+	}
+	#footer section.wrapper div.main2 div.left div.four{
+		width: 37px;
+		height: 37px;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		background-color: white;
+		margin-right: 10px;
+	}
+	#footer section.wrapper div.main2 div.left div.four img{
+
+	}
+	#footer section.wrapper div.main2 div.right{
+		margin-left: 600px;
+	} 
+	#footer section.wrapper div.main2 div.right h3{
+		color: white;
+		font-weight: 700;
+	} 
+	#footer section.wrapper div.main2 div.right div.os{
+		margin-top: 50px;
+		display: flex;
+	} 
+	#footer section.wrapper div.main2 div.right div.os div.play{
+		display: flex;
+		margin-right: 40px;
+	} 
+	#footer section.wrapper div.main2 div.right div.os div.play img{
+		
+	} 
+	#footer section.wrapper div.main2 div.right div.os div.play h6{
+		color: white;
+	} 
+	#footer section.wrapper div.main2 div.right div.os div.ios{
+		display: flex;
+	} 
+	#footer section.wrapper div.main2 div.right div.os div.ios img{
+		
+	} 
+	#footer section.wrapper div.main2 div.right div.os div.ios h6{
+		color: white;
+	} 
+	#footer section.wrapper div.main3{
+		padding-bottom: 100px;
+		margin-top: 100px; 
+		display: flex;
 	}
 	#footer section.wrapper div.main3 h1{
-		width: 85%;
+		border-top: 1px solid #6a6f6f;
+	    border-bottom: 1px solid #6a6f6f;
+	    width: 100%;
+	    padding: 30px 24px;
+	    font-weight: 700;
+	    color: white;
 	}
-
-}
-/* ===== GLOBAL RESPONSIVE RESET ===== */
-@media (max-width: 1024px) {
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-/* ===== TABLET ===== */
-@media (max-width: 1024px) {
-
-  /* HEADER */
-  #header section.wrapper {
-    flex-direction: column;
-    height: auto;
-  }
-
-  #header .left ul,
-  #header .right ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #header .right {
-    margin-left: 0;
-  }
-
-  /* HERO SECTION */
-  #main section.name div.fat div.one {
-    margin-top: -250px;
-    padding: 0 20px;
-  }
-
-  #main section.name div.fat div.one h1 {
-    font-size: 50px;
-  }
-
-  /* CARDS SECTION */
-  #cards1 section.main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #cards1 section.main div.one,
-  #cards1 section.main div.two {
-    width: 90%;
-    margin: 30px 0;
-  }
-
-  /* ARRIVAL */
-  #arrival .middle {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  /* MEN & WOMEN */
-  #men .main,
-  #Women .main {
-    justify-content: center;
-  }
-
-  /* DEAL */
-  #deal section.wrapper div.main {
-    width: 100%;
-    height: auto;
-    padding-bottom: 40px;
-  }
-
-  #deal section.wrapper div.main div.two {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* FOOTER */
-  #footer .main1 {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  #footer .main2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #footer .main2 .right {
-    margin-left: 0;
-    margin-top: 40px;
-  }
+	#footer section.wrapper div.main3 h1 img{
+		
+	}
+	#footer section.wrapper div.main4{
+		display: flex;
+		justify-content: center;
+	} 
+	#footer section.wrapper div.main4 h4{
+		color: white;
+		margin-top: -50px;
+	}
 }
