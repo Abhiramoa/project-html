@@ -1320,12 +1320,12 @@ br.clear {
 	margin-top: -50px;
 }
 
-@media (max-width: 376px) { 
+@media (max-width: 350px) { 
 	#header section.wrapper div.right{
 		display: none;
 	}
 }
-@media (max-width: 376px) {
+@media (max-width: 780px) {
   #main section.name,
   #main section.name .fat,
   #main section.name .img {
@@ -1340,7 +1340,7 @@ br.clear {
     display: block;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 780px) {
 	h1 {
   		font-size: 32px;
   		line-height: 1.2;
@@ -1353,7 +1353,7 @@ br.clear {
 	  font-size: 16px;
 	}
 }
-@media (max-width: 481px){
+@media (max-width: 780px){
 	.wrapper{
   		max-width: 100%;
 	}
@@ -1362,7 +1362,7 @@ br.clear {
 	}
 	#main section.name div.fat {
 		background-image: url(assets/bg-1.jpg);
-		width:300%;
+		width:302%;
 		height:1000px;
 		display: flex;
 		align-items: center;
@@ -1775,6 +1775,7 @@ br.clear {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		align-items: center;
 	}
 	#card section.wrapper div.main div{
 		
@@ -1782,6 +1783,7 @@ br.clear {
 	#card section.wrapper div.main div.card1{
 		position: relative;
 		margin-right: 20px;
+		margin-left: 150px;
 	}
 	#card section.wrapper div.main div.card1 img.on{
 		position: relative;
@@ -1890,7 +1892,7 @@ br.clear {
 	}
 	#card section.wrapper div.main div.card3{
 		position: relative;
-		margin-right: 25px;
+		margin-right: 100px;
 	}
 	#card section.wrapper div.main div.card3 img.on{
 		position: relative;
@@ -2031,6 +2033,7 @@ br.clear {
 		border-color: #807D7E;
 		border-radius: 10px;
 		margin-right: 20px;
+		margin-left:100px;
 	}
 	#feed section.wrapper div.main div.box1 div.content{
 		margin-left: 30px;
@@ -2122,7 +2125,7 @@ br.clear {
 	}
 	#footer{
 		background-color: #3C4242;
-		width: 270%;
+		width: 302%;
 	}
 	#footer section.wrapper{
 		
