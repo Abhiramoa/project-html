@@ -1433,6 +1433,8 @@ br.clear {
 		width: 900;
     	max-width: 1200px;
   		margin: auto;
+  		padding-top: 50px;
+  		margin-left: 80px;
 	}
 	#cards1 section.main div.one section.wrapper h2.a{
 		margin-top: 50px;
@@ -1474,6 +1476,11 @@ br.clear {
 	}
 	#cards1 section.main div.two h2{
 		transform: rotateY(180deg);
+	}
+	#cards1 section.main div.two section.wrapper{
+		padding-top: 20px;
+		margin-left: -30px;
+  		
 	}
 	#cards1 section.main div.two  h2.a{
 		margin-top: 50px;
